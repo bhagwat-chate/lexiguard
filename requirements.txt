@@ -1,0 +1,7 @@
+yml
+pydantic
+python-dotenv
+openai
+cohere
+anthropic
+huggingface_hub

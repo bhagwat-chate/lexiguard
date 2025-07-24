@@ -1,0 +1,40 @@
+default_provider: openai
+
+providers:
+  openai:
+    api_key: ${OPENAI_API_KEY}
+    models:
+      - name: gpt-4o
+        temperature: 0.2
+        max_tokens: 1024
+        fallback: cohere
+      - name: gpt-4-turbo
+      - name: gpt-3.5-turbo
+
+  cohere:
+    api_key: ${COHERE_API_KEY}
+    models:
+      - name: command-r-plus
+      - name: command-r
+      - name: command-light
+
+  gemini:
+    api_key: ${GOOGLE_API_KEY}
+    models:
+      - name: gemini-1.5-pro
+      - name: gemini-pro
+      - name: gemini-ultra
+
+  anthropic:
+    api_key: ${ANTHROPIC_API_KEY}
+    models:
+      - name: claude-3-opus
+      - name: claude-3-sonnet
+      - name: claude-2.1
+
+  huggingface:
+    access_token: ${HF_API_KEY}
+    models:
+      - name: mistral-7b-instruct
+      - name: llama2-70b
+      - name: mixtral

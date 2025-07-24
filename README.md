@@ -125,5 +125,5 @@ MIT License — built for educational, enterprise, and interview showcase use.
 ## 🚀 Author
 
 **Bhagwat Chate**  
-AI/ML Lead | FAANG Aspirant | GenAI Architect  
+AI/ML Lead | GenAI Architect  
 📫 [LinkedIn](https://www.linkedin.com/in/aimlbhagwatchate) • [GitHub](https://github.com/bhagwat-chate)

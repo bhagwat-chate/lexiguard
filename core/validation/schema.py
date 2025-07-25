@@ -1,7 +1,7 @@
 from typing import Optional
 from pydantic import BaseModel
-from core.enums import RiskLevelEnum
-from core.enums import ActorEnum
+from core.routing.enums import RiskLevelEnum
+from core.routing.enums import ActorEnum
 
 
 class ClauseMetaData(BaseModel):

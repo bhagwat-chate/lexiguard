@@ -1,4 +1,9 @@
 .idea
 .env
+.env.*
 venv
-.env.example
+shared/configs/env/.env.dev
+*.log
+__pycache__/
+shared/configs/env/*
+!shared/configs/env/.env.template

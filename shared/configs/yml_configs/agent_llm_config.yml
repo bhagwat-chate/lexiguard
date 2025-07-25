@@ -1,0 +1,49 @@
+# E:\Project\lexiguard\shared\configs\yml_configs\agent_llm_config.yml
+
+agents:
+  query_parser:
+    fallback_strategy: fast
+    temperature: 0.1
+    top_p: 0.85
+    max_tokens: 512
+    tools_enabled: false
+    fallback_order:
+      - cohere
+      - gemini
+      - openai
+      - huggingface
+
+    llms:
+      - provider: cohere
+        model: command-r
+        fallback: command-r+
+      - provider: cohere
+        model: command-r+
+        fallback: command-light
+      - provider: cohere
+        model: command-light
+        fallback: null
+
+      - provider: gemini
+        model: gemini-1.5-flash
+        fallback: gemini-1.5-pro
+      - provider: gemini
+        model: gemini-1.5-pro
+        fallback: gemini-1.0-pro
+      - provider: gemini
+        model: gemini-1.0-pro
+        fallback: null
+
+      - provider: openai
+        model: gpt-3.5-turbo
+        fallback: gpt-4
+      - provider: openai
+        model: gpt-4
+        fallback: null
+
+      - provider: huggingface
+        model: mistral-7b
+        fallback: tiny-llama
+      - provider: huggingface
+        model: tiny-llama
+        fallback: null

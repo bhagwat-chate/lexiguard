@@ -5,3 +5,5 @@ openai
 cohere
 anthropic
 huggingface_hub
+protobuf
+tenacity
